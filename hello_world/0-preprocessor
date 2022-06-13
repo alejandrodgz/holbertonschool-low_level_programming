@@ -1,0 +1,3 @@
+#!/bin/bash
+#new script
+gcc -E main.c -o c
