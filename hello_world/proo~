@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+/**
+* main - Entry point
+*
+*
+*Return: Always 0 (success)
+*/
+
+int main(void)
+{
+	int a = sizeof(char);
+	int b = sizeof(int);
+	int c = sizeof(long);
+	int d = sizeof(long long);
+	int e = sizeof(float);
+	printf("Size of a char: sizeof(&a) byte(s)" );
+	printf("Size of a int: %d\n", sizeof(int), "byte(s)");
+	printf("Size of a long: %d\n", sizeof(long), "byte(s)");
+	printf("Size of a long long: %d\n", sizeof(long long), "byte(s)");
+	printf("Size of a float: %d\n", sizeof(float), "byte(s)");
+	return (0);
+}
