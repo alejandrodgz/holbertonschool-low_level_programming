@@ -1,0 +1,23 @@
+#include <stdio.h>
+/**
+ * main - Entry point
+ *
+ *Return: always 0
+ */
+
+int main(void)
+{
+	int a = 48;
+
+	do {
+		if (a > 57 && a < 97)
+		{
+			a = a + 1;
+		continue;
+		}
+		putchar (a);
+		a++;
+	} while (a < 103);
+	putchar ('\n');
+	return (0);
+}
