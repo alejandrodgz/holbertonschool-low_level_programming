@@ -7,13 +7,14 @@
 
 int main(void)
 {
-	int i, j;
-	int A[i][j];
+	int i;
 
-	for (i = 0; i <= 9; i++)
+	for (i = 48; i < 58; i++)
 	{
-		for (j = 0; j <= 9; j++)
-			printf("%d\n", A[]);
+		putchar (i);
+		putchar (44);
+		putchar ('\t');
 	}
+	putchar ('\n');
 	return (0);
 }
