@@ -1,7 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
 #include <unistd.h>
-#include <stdio.h>
 
 /**
  * _putchar - writes the character c to stdout
@@ -56,13 +55,5 @@ int print_sign(int n);
  */
 
 int _abs(int);
-
-/**
- * print_last_digit - print last digit
- * @int: the number to compute
- * Return: last digit
- */
-
-int print_last_digit(int);
 
 #endif
