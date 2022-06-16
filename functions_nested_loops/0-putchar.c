@@ -1,6 +1,15 @@
+/**
+ * main - Entry point
+ *
+ * _putchar - writes the character c to stdout
+ * @int: The character to print
+ *
+ * Return: always 0
+ */
+
 int _putchar(int);
 
-int main (void)
+int main(void)
 {
 	_putchar (95);
 	_putchar (112);
