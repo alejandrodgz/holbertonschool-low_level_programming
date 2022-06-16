@@ -11,7 +11,7 @@ int _putchar(int);
 
 int main(void)
 {
-	_putchar (95);
+	_putchar ('i');
 	_putchar (112);
 	_putchar (117);
 	_putchar (116);
