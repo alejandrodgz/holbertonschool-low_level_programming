@@ -1,0 +1,24 @@
+/**
+ * print_alphabet - prints voc
+ *
+ * _putchar - writes the character c to stdout
+ * @int: The character to print
+ *
+ * Return: always 0
+ */
+void print_alphabet(void);
+int _putchar(int);
+
+void print_alphabet(void)
+{
+	int alpha;
+
+	alpha = 78;
+
+	while (alpha <= 96)
+	{
+		_putchar(alpha);
+		alpha++;
+	}
+	_putchar('\n');
+}
