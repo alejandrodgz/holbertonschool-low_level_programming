@@ -48,4 +48,12 @@ int _isalpha(int c);
 
 int print_sign(int n);
 
+/**
+ * _abs - absolut value of an integer
+ * @int: integer to compute
+ * Return: absolut value
+ */
+
+int _abs(int);
+
 #endif
