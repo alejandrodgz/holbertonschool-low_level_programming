@@ -65,4 +65,17 @@ int _abs(int);
 
 int print_last_digit(int);
 
+/**
+ * jack_bauer - print every minute
+ *
+ */
+
+void jack_bauer(void);
+
+/**
+ * times_table - print times 9 table
+ */
+
+void times_table(void);
+
 #endif
