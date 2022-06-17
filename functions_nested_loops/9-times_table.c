@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * jack_bauer - prints sign of number
+ * times_table - prints sign of number
  *
  * Return: 0
  */
