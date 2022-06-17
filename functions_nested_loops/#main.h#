@@ -1,4 +1,4 @@
-#ifndef MAIN_H
+ #ifndef MAIN_H
 #define MAIN_H
 #include <unistd.h>
 #include <stdio.h>
@@ -36,7 +36,63 @@ int _islower(int c);
 /**
  * _isalpha -  checks for alphabetic character
  *  @c: is the character
- *  Return: o if is no lower/uppercase char
+/**
+ * print_to_98 - addition
+ *
+ * @n: first number
+ *
+ * Return: addition
+ */
+
+void print_to_98(int n)/**
+ * print_to_98 - addition
+ *
+ * @n: first number
+ *
+ * Return: addition
+ */
+
+void print_to_98(int n)/**
+ * print_to_98 - addition
+ *
+ * @n: first number
+ *
+ * Return: addition
+ */
+
+void print_to_98(int n)/**
+ * print_to_98 - addition
+ *
+ * @n: first number
+ *
+ * Return: addition
+ */
+
+void print_to_98(int n)/**
+ * print_to_98 - addition
+ *
+ * @n: first number
+ *
+ * Return: addition
+ */
+
+void print_to_98(int n)/**
+ * print_to_98 - addition
+ *
+ * @n: first number
+ *
+ * Return: addition
+ */
+
+void print_to_98(int n)/**
+ * print_to_98 - addition
+ *
+ * @n: first number
+ *
+ * Return: addition
+ */
+
+void print_to_98(int n) *  Return: o if is no lower/uppercase char
  */
 
 int _isalpha(int c);
