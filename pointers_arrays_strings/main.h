@@ -83,4 +83,12 @@ void print_line(int n);
 
 void reset_to_98(int *n);
 
+/**
+ * swap_int - update value of a a variable
+ * @a: pointer
+ * @b: pointer
+ */
+
+void swap_int(int *a, int *b);
+
 #endif

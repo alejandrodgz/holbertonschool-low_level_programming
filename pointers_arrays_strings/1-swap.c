@@ -1,0 +1,21 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * swap_int - update value of a a variable
+ * @a: pointer
+ * @b: pointer
+ */
+
+void swap_int(int *a, int *b)
+{
+	int *pa = NULL;
+	int *pb = NULL;
+	int temp;
+
+	pa = a;
+	pb = b;
+	temp = *pa;
+	*pa = *pb;
+	*pb = temp;
+}
