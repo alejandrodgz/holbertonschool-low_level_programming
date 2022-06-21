@@ -32,4 +32,22 @@ int _isdigit(int c);
 
 int mul(int a, int b);
 
+/**
+ * print_numbers - print 0 - 9
+ *
+ * Return: nothing
+ */
+
+void print_numbers(void);
+
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+
+int _putchar(char c);
+
 #endif
