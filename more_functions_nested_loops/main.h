@@ -50,4 +50,12 @@ void print_numbers(void);
 
 int _putchar(char c);
 
+/**
+ * print_most_numbers - print all number except 2,4
+ *
+ * Return: print
+ */
+
+void print_most_numbers(void);
+
 #endif
