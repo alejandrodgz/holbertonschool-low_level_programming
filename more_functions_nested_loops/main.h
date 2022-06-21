@@ -21,4 +21,15 @@ int _isupper(int c);
 
 int _isdigit(int c);
 
+/**
+ * mul - multipication
+ *
+ * @a: digit 1
+ * @b: digit 2
+ *
+ * Return: result
+ */
+
+int mul(int a, int b);
+
 #endif
