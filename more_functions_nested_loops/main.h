@@ -66,4 +66,13 @@ void print_most_numbers(void);
 
 void more_numbers(void);
 
+/**
+ * print_line- print a line with n c length
+ *
+ * @n: length
+ * Return: character
+ */
+
+void print_line(int n);
+
 #endif
