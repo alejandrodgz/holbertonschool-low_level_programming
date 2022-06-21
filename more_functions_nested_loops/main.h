@@ -11,4 +11,14 @@
 
 int _isupper(int c);
 
+/**
+ * _isdigit -evaluates if c is digit
+ *
+ * @c: ifidigit
+ *
+ * Return: 1 if digit
+ */
+
+int _isdigit(int c);
+
 #endif

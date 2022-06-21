@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include "main.h"
+
+/**
+ * _isupper - return a value if UPPER
+ *
+ * @c: character to compute
+ * Return: character
+ */
+
+int _isupper(int c)
+{
+	if (c <= 57 && c >= 48)
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+}
