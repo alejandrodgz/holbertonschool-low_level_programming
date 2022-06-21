@@ -107,6 +107,14 @@ int _strlen(char *s);
 
 void _puts(char *str);
 
+/**
+ * print_rev - length of a string
+ * @s: pointer
+ * Return: length of string
+ */
+
+void print_rev(char *s);
+
 
 
 #endif
