@@ -99,4 +99,14 @@ void swap_int(int *a, int *b);
 
 int _strlen(char *s);
 
+/**
+ * _puts - length of a string
+ * @str: pointer
+ * Return: length of string
+ */
+
+void _puts(char *str);
+
+
+
 #endif
