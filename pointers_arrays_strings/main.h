@@ -139,4 +139,13 @@ void puts2(char *str);
 
 void puts_half(char *str);
 
+/**
+ * print_array - every other character
+ * @a: pointer
+ * @n: number of elements to print
+ * Return: length of string
+ */
+
+void print_array(int *a, int );
+
 #endif
