@@ -115,6 +115,20 @@ void _puts(char *str);
 
 void print_rev(char *s);
 
+/**
+ * rev_string - length of a string
+ * @s: pointer
+ * Return: length of string
+ */
 
+void rev_string(char *s);
+
+/**
+ * puts2 - every other character
+ * @str: pointer
+ * Return: length of string
+ */
+
+void puts2(char *str);
 
 #endif

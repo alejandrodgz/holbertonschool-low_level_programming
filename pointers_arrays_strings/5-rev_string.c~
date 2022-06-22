@@ -1,0 +1,28 @@
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+
+/**
+ * rev_string - length of a string
+ * @s: pointer
+ * Return: length of string
+ */
+
+void rev_string(char *s)
+{
+	int len,i;
+	char k[1000] ="" ;
+	char t;
+
+	len = strlen(s);
+
+	for (len = len - 1; len >= 0; len--)
+	{
+		i = 0;
+		t = s[len];
+		k[i] = t;
+		i++;
+	}
+	printf ("%s", s);
+	strcpy(s,k);
+}
