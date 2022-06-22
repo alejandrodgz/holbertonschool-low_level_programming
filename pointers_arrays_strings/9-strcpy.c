@@ -12,7 +12,7 @@
 char *_strcpy(char *dest, char *src)
 {
 	int len, a, b;
-	char tmp[98];
+	char tmp[2000];
 
 	len = strlen(src);
 
