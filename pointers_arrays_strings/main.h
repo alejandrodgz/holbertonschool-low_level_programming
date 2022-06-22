@@ -131,4 +131,12 @@ void rev_string(char *s);
 
 void puts2(char *str);
 
+/**
+ * puts_half - every other character
+ * @str: pointer
+ * Return: length of string
+ */
+
+void puts_half(char *str);
+
 #endif
