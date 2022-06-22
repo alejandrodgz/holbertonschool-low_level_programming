@@ -148,4 +148,13 @@ void puts_half(char *str);
 
 void print_array(int *a, int );
 
+/**
+ * _strcpy - every other character
+ * @dest: dest
+ * @src: number of elements to print
+ * Return: length of string
+ */
+
+char *_strcpy(char *dest, char *src);
+
 #endif
