@@ -10,20 +10,15 @@
 
 void puts2(char *str)
 {
-	int len;
-
-	len = strlen(*str);
-	for (; *str <= len; str++)
-	{
-		if(*str / 2 != 0)
-		{
-		
 	while (*str != '\0')
 	{
-		
-		if
 		_putchar(*str);
-		str += 2;
+		str += 1;
+		if (*str == '\0')
+		{
+			break;
+		}
+		str += 1;
 	}
 	_putchar('\n');
 }
