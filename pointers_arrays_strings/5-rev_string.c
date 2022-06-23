@@ -3,26 +3,27 @@
 #include <string.h>
 
 /**
- * rev_string - length of a string
- * @s: pointer
+ * rev_string - every other character
+ * @s: dest
+ *
  * Return: length of string
  */
 
 void rev_string(char *s)
 {
-	int len,i;
-	char k[1000] ="" ;
-	char t;
+	int len, a, b, c;
+	char tmp[2000];
 
 	len = strlen(s);
 
-	for (len = len - 1; len >= 0; len--)
+	for (a = 0 ; a < len ; a++)
 	{
-		i = 0;
-		t = s[len];
-		k[i] = t;
-		i++;
+		c = (len - 1) - a;
+		tmp[c] = s[a];
 	}
-	printf ("%s", k);
-	strcpy(s,k);
+	for (b = 0; b < len; b++)
+	{
+		s[b] = tmp[b];
+	}
+
 }
