@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * print_square - print a line with n c length
+ * print_triangle - print a line with n c length
  *
  * @size: length
  * Return: character
