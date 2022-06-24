@@ -3,9 +3,8 @@
 #include <string.h>
 
 /**
- * _strncpy - concatenates n bytes from src to dest
- * @dest: destination string
- * @src: number of elements to print
+ * reverse_array - concatenates n bytes from src to dest
+ * @a: destination string
  * @n: number of bytes
  * Return: length of string
  */
@@ -18,7 +17,7 @@ void reverse_array(int *a, int n)
 
 	i = 0;
 	j = 0;
-	while(i < n)
+	while (i < n)
 	{
 		tmp[i] = a[i];
 		i++;
