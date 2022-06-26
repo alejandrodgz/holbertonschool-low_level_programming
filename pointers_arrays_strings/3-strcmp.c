@@ -3,25 +3,29 @@
 #include <string.h>
 
 /**
- * _strncpy - concatenates n bytes from src to dest
- * @dest: destination string
- * @src: number of elements to print
- * @n: number of bytes
- * Return: length of string
+ * _strcmp - concatenates n bytes from src to dest
+ * @s2: destination string
+ * @s1: number of elements to print
+ * Return: s[i] - s[i]
  */
 
-char *_strncpy(char *dest, char *src, int n)
+int _strcmp(char *s1, char *s2)
 {
 
 	int i;
+	int j = 0;
 
-	for (i = 0; i < n && src[i] != '\0'; i++)
+	for (i = 0; s1[i] != '\0' || s2[i] != '\0'; i++)
 	{
-		dest[i] = src[i];
+		if (s1[i] == s2[i])
+		{
+			continue;
+		}
+		else if (s1[i] != s2[i])
+		{
+			j = s1[i] - s2[i];
+			break;
+		}
 	}
-	for ( ; i < n; i++)
-	{
-		dest[i] = '\0';
-	}
-	return (dest);
+	return (j);
 }
