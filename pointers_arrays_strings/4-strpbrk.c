@@ -5,7 +5,7 @@
 /**
  * _strpbrk - fills memory with a constant byte
  *
- * @s pointed area to fill
+ * @s: ointed area to fill
  * @accept: what to fill
  *
  * Return: pointer to the memory area
@@ -22,7 +22,6 @@ char *_strpbrk(char *s, char *accept)
 			if (s[i] == accept[j])
 			{
 				return (&s[i]);
-				break;
 			}
 			else
 			{
