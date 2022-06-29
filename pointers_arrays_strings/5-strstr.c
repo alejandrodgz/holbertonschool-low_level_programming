@@ -17,10 +17,6 @@ char *_strstr(char *haystack, char *needle)
 	char *p;
 
 	len = strlen(needle);
-	if (needle[0] == '\0')
-	{
-		return (&haystack[0]);
-	}
 	for (i = 0; needle[i] != '\0'; i++)
 	{
 		printf("%d", needle[i]);
@@ -45,5 +41,5 @@ char *_strstr(char *haystack, char *needle)
 			return (p - (len - 1));
 		}
 	}
-	return (NULL);
+	return (0);
 }
