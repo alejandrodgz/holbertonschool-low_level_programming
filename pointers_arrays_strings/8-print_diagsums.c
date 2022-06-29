@@ -25,7 +25,7 @@ void print_diagsums(int *a, int size)
 		i = i + (size + 1);
 	}
 	printf("%d, ", k);
-	while (j > 0)
+	while (j > 1)
 	{
 		j = j - (size - 1);
 		l = l + a[j];
