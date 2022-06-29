@@ -16,10 +16,10 @@ char *_strstr(char *haystack, char *needle)
 	int i = 0, len, j = 0, tmp = 0;
 	char *p;
 
-	len = strlen (needle);
+	len = strlen(needle);
 	for (i = 0; needle[i] != '\0'; i++)
 	{
-		while (haystack [j] != '\0' )
+		while (haystack[j] != '\0')
 		{
 			if ((needle[i] == haystack[j] && needle[i] != '\0') && haystack[j] != '\0')
 			{
@@ -29,7 +29,7 @@ char *_strstr(char *haystack, char *needle)
 				i++;
 				j++;
 			}
-			else if (needle[i] == NULL)
+			else if (needle[0] == '\0')
 			{
 				return (&haystack[0]);
 			}
