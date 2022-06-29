@@ -17,9 +17,12 @@ char *_strstr(char *haystack, char *needle)
 	char *p;
 
 	len = strlen(needle);
+	if (needle[0] == '\0')
+	{
+		return(haystack);
+	}
 	for (i = 0; needle[i] != '\0'; i++)
 	{
-		printf("%d", needle[i]);
 		while (haystack[j] != '\0')
 		{
 			if ((needle[i] == haystack[j] && needle[i] != '\0') && haystack[j] != '\0')
