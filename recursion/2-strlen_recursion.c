@@ -3,18 +3,18 @@
 #include <string.h>
 
 /**
- * _puts_recursion - Write a function that prints a string,\
+ * _strlen_recursion - Write a function that prints a string,\
  * followed by a new line.
  *
  * @s: string to print
+ * Return: strlen
  */
 
-void _print_rev_recursion(char *s)
+int _strlen_recursion(char *s)
 {
-
 	if (*s != '\0')
 	{
-		_print_rev_recursion (s + 1);
-		_putchar(*s);
+		return (1 +  _strlen_recursion(s + 1));
 	}
+	return (0);
 }
