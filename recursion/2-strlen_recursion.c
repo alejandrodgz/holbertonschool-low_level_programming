@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * _print_rev_recursion - Write a function that prints a string,\
+ * _puts_recursion - Write a function that prints a string,\
  * followed by a new line.
  *
  * @s: string to print
