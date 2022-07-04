@@ -1,0 +1,38 @@
+#include "main.h"
+#include <stdio.h>
+#include <string.h>
+
+/**
+ * _strncat - concatenates n bytes from src to dest
+ * @dest: destination string
+ * @src: number of elements to print
+ * @n: number of bytes
+ * Return: length of string
+ */
+
+char *_strncat(char *dest, char *src, int n)
+{
+	int i, j;
+
+	i = 0;
+	j = 0;
+
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+	while (j < n)
+	{
+		if (src[j] == '\0')
+		{
+			break;
+		}
+		else
+		{
+		dest[i] = src[j];
+		i++;
+		j++;
+		}
+	}
+	return (dest);
+}

@@ -2,4 +2,4 @@
 # script
 
 gcc -c *.c
-ar cr liball.aliball.a *.o
+ar cr liball.a *.o
