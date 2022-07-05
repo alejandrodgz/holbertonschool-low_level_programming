@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+/**
+ * main - Write a program that prints its name
+ *
+ * @argc: number of parameters
+ * @argv: strings
+ * Return: name of program
+ */
+
+int main(int argc, char *argv[])
+{
+	int i, c, mul = 1;
+
+	if (argc != 3)
+	{
+		printf("Error");
+		return (1);
+	}
+	for (i = 1; i < argc; i++)
+	{
+		c =  atoi(argv[i]);
+		mul = mul * c;
+	}
+	printf("%d\n", mul);
+	return (0);
+}
