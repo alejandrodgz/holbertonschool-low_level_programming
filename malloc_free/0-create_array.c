@@ -28,5 +28,6 @@ char *create_array(unsigned int size, char c)
 	}
 	if (t == NULL)
 		return (NULL);
+	else
 	return (t);
 }
