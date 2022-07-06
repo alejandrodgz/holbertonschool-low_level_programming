@@ -19,6 +19,8 @@ char *_strdup(char *str)
 	char *t = NULL;
 	int len = strlen(str);
 
+	if (*str == '\0')
+		return (NULL);
 	if (len == 0)
 	{
 		return (NULL);
