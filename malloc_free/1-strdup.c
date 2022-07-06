@@ -19,11 +19,14 @@ char *_strdup(char *str)
 	char *t = NULL;
 	unsigned int len = strlen(str);
 
-	if (len == 0 || str == NULL)
+	if (str == NULL)
+		return (NULL);
+
+	if (len == 0)
 	{
 		return (NULL);
 	}
-	t = malloc(sizeof(str) * len);
+	t = malloc(sizeof(t) * len);
 	if (!t)
 		return (NULL);
 	for (i = 0; i < len; i++)
