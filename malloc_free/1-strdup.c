@@ -21,10 +21,6 @@ char *_strdup(char *str)
 
 	if (!str)
 		return (NULL);
-	if (len == 0)
-	{
-		return (NULL);
-	}
 	t = malloc(len + 1);
 	if (!t)
 		return (NULL);
