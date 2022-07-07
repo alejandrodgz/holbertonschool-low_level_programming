@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 #include <stdlib.h>
 #include <string.h>
 
@@ -12,14 +13,18 @@
 
 int main(int argc, char *argv[])
 {
-	int i, j, c, sum = 0;
+	int i, j, k, c, len, sum = 0;
 
 	for (j = 1; j < argc; j++)
 	{
-		if (!(*argv[j] > 47 && *argv[j] < 58))
+		len = strlen(argv[j]);
+		for (k = 0; k < len; k++)
 		{
-			printf("Error\n");
-			return (1);
+			if (!(argv[j][k] >= '0' && argv[j][k] <= '9'))
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
 	}
 	for (i = 1; i < argc; i++)
