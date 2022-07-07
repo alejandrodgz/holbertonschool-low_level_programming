@@ -3,35 +3,16 @@
 #include <string.h>
 
 /**
- * _strspn - fills memory with a constant byte
- *
- * @s: pointed area to fill
- * @accept: what to fill
- *
- * Return: pointer to the memory area
+ * _strspn - concatenates n bytes from src to dest
+ * @s: destination string
+ * @accept: number of elements to print
+ * Return: length of string
  */
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, j, a;
-
-	a = 0;
-	for (i = 0; s[i] != '\0' && s[i] != 32; i++)
-	{
-		for (j = 0; accept[j] != '\0'; j++)
-		{
-			if (accept[j] == s[i])
-			{
-				a = a + 1;
-			}
-		}
-	}
-	if (a != 0)
-	{
-		return (a);
-	}
-	else
-	{
-		return (0);
-	}
+	unsigned int i;
+	if(s[i] == accept[i])
+		return (i);
+	return (i + 1);
 }
