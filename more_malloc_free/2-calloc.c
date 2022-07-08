@@ -5,7 +5,7 @@
 
 /**
  * _calloc - concatenates n bytes from src to dest
- * @nmeb: s1
+ * @nmemb: s1
  * @size: s2
  * Return: return1
  */
@@ -17,7 +17,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	if (nmemb == 0)
 		return (NULL);
-	if( size == 0)
+	if (size == 0)
 		return (NULL);
 	j = (size * nmemb);
 	p = malloc(j);
