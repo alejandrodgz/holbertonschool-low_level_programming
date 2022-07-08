@@ -4,10 +4,9 @@
 #include <string.h>
 
 /**
- * string_nconcat - concatenates n bytes from src to dest
- * @s1: s1
- * @s2: s2
- * @n: n
+ * _calloc - concatenates n bytes from src to dest
+ * @nmeb: s1
+ * @size: s2
  * Return: return1
  */
 
@@ -16,12 +15,12 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	unsigned int i, j;
 	char *p = NULL;
 
-	if(nmemb == 0)
+	if (nmemb == 0)
 		return (NULL);
-	if(size == 0)
+	if( size == 0)
 		return (NULL);
 	j = (size * nmemb);
-  	p = malloc(j);
+	p = malloc(j);
 	if (!p)
 		return (NULL);
 	for (i = 0; i < (size * nmemb); i++)
