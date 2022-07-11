@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+void main()
+{
+	char s[] = "Best school";
+	printf("%lo\n", sizeof(s));
+	printf("%lo\n", strlen(s));
+	printf("%lo\n", strlen("best school"));
+	printf("%lo\n", sizeof("best school"));
+}
