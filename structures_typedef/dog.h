@@ -5,7 +5,7 @@
 #include <string.h>
 
 /**
- * dog - structer
+ * struct dog - structer
  * @name: name
  * @age: age
  * @owner: owner

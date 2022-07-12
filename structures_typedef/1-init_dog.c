@@ -2,6 +2,7 @@
 
 /**
  * init_dog - entry
+ * @d: dd
  * @name: name
  * @age: age
  * @owner: owner
