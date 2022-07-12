@@ -1,0 +1,22 @@
+#include "dog.h"
+
+/**
+ * print_dog - entry
+ * @d: dd
+ * Return: aa
+ */
+
+void print_dog(struct dog *d)
+{
+	if (d == NULL)
+		return;
+	if(d->name == NULL)
+		printf("(nil)");
+	if(d->age == 0)
+		printf("(nil)");
+	if(d->owner == NULL)
+		printf("(nil)");
+	printf("my_dog.name = \"%s\"\n", d->name);
+	printf("my_dog.name = \"%f\"\n", d->age);
+	printf("my_dog.name = \"%s\"\n", d->owner);
+}
