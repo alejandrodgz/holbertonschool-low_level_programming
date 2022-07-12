@@ -39,8 +39,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	for (j = 0; owner[j] != '\0'; j++)
 		copyowner[j] = owner[j];
 	copyowner[j] = '\0';
-	dog1->name = name;
+	dog1->name = strcpy(copyname, name);
 	dog1->age = age;
-	dog1->owner = owner;
+	dog1->owner = strcpy(copyowner, owner);
 	return dog1;
 }
