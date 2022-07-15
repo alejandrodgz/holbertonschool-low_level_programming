@@ -24,8 +24,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s", va_arg(ap, char *));
 		else
 		{
-			printf("%c", *separator);
 			printf("%s", va_arg(ap, char *));
+			printf("%c", *separator);
 		}
 	}
 	printf("%s", va_arg(ap, char *));
