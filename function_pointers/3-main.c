@@ -1,10 +1,10 @@
 #include "3-calc.h"
 
 /**
- *
- *
- *
- *
+ * main - entry
+ * @argc: m
+ * @argv: dd
+ * Return: s
  */
 
 int main(int argc, char *argv[])
@@ -24,6 +24,6 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(99);
 	}
-	printf ("%d\n", get_op_func(argv[2])(a, b));
+	printf("%d\n", get_op_func(argv[2])(a, b));
 	return (0);
 }
