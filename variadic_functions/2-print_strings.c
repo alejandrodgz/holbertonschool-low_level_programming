@@ -31,9 +31,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		else
 			printf("%s%c ", va_arg(ap, char *), *separator);
 	}
-	if (va_arg(ap, char*) == NULL)
-		printf("(nil)\n");
-	else
-		printf("%s\n", va_arg(ap, char *));
+	/*if (va_arg(ap, char*) == NULL)
+	  printf("(nil)\n");*/
+	printf("%s\n", va_arg(ap, char *));
 	va_end(ap);
 }
