@@ -2,7 +2,7 @@
 
 /**
  * sum_them_all - entry
- * @s: number of arguments
+ * @n: number of arguments
  * Return: sum
  */
 
