@@ -1,18 +1,17 @@
 #include "variadic_functions.h"
 
 /**
- * print_numbers - entry
+ * print_strings - entry
  * @separator: number of arguments
  * @n: number
  */
 
-void print_numbers(const char *separator, const unsigned int n, ...)
+
+void print_strings(const char *separator, const unsigned int n, ...)
 {
 	unsigned int i = 0;
 	va_list ap;
-	char *s = "tototo";
 
-	printf("%s", s);
 	if (n == 0)
 	{
 		printf("\n");
@@ -23,15 +22,15 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		if (separator == NULL)
 		{
-			printf("%d", va_arg(ap, int));
+			printf("%s", va_arg(ap, char *));
 		}
 		else if (*separator == '\0')
 		{
-			printf("%d", va_arg(ap, int));
+			printf("%s", va_arg(ap, char *));
 		}
 		else
-		printf("%d%c ", va_arg(ap, int), *separator);
+			printf("%s%c ", va_arg(ap, char *), *separator);
 	}
-	printf("%d\n", va_arg(ap, int));
+	printf("%s\n", va_arg(ap, char *));
 	va_end(ap);
 }
