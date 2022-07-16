@@ -2,13 +2,13 @@
 
 /**
  * printc - s
- * @a: a
+ * @ap: a
  *
  *
  *
  */
 
-void printc (va_list ap)
+void printc(va_list ap)
 {
 		printf("%c", va_arg(ap, int));
 }
@@ -22,26 +22,24 @@ void printc (va_list ap)
  *
  */
 
-void printi (va_list ap)
+void printi(va_list ap)
 {
 		printf("%d", va_arg(ap, int));
 }
 
 /**
- *
- * printf - a
+ * printfo - a
  * @ap: list
  *
  *
  */
 
-void printfo (va_list ap)
+void printfo(va_list ap)
 {
 		printf("%f", va_arg(ap, double));
 }
 
 /**
- *
  *prints - s
  * @ap: list
  *
@@ -49,7 +47,7 @@ void printfo (va_list ap)
  *
  */
 
-void prints (va_list ap)
+void prints(va_list ap)
 {
 	char *s;
 
@@ -64,32 +62,31 @@ void prints (va_list ap)
 }
 
 /**
- * print_strings - entry
- * @separator: number of arguments
- * @n: number
+ * print_all - entry
+ * @format: number of arguments
+ *
  */
 
 void print_all(const char * const format, ...)
 {
 	va_list ap;
 	int j, i = 0;
-	char *sep ="";
-
+	char *sep = "";
 	tipe are[] = {
 		{'c', printc},
 		{'i', printi},
-                {'f', printfo},
-                {'s', prints},
-                {'\0', NULL}
+		{'f', printfo},
+		{'s', prints},
+		{'\0', NULL}
 	};
 
 	va_start(ap, format);
 	while (format[i] != '\0')
 	{
 		j = 0;
-		while(are[j].tipe1 != '\0')
+		while (are[j].tipe1 != '\0')
 		{
-			if(are[j].tipe1 == format[i])
+			if (are[j].tipe1 == format[i])
 			{
 				printf("%s", sep);
 				are[j].f(ap);
