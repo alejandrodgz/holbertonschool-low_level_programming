@@ -60,7 +60,6 @@ void prints (va_list ap)
 		printf("(nil)");
 		return;
 	}
-	else
 		printf("%s", s);
 }
 
