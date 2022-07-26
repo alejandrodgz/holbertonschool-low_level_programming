@@ -15,10 +15,6 @@ size_t print_list(const list_t *h)
 	const list_t *ptr = NULL;
 
 	ptr = h;
-	if (ptr == NULL)
-	{
-		printf("[0] (nil)");
-	}
 	while (ptr != NULL)
 	{
 		a += 1;
