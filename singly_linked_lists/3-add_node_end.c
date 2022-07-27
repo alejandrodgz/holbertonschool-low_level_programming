@@ -7,7 +7,7 @@
  * @str: string length
  * Return: number of nodes
  *
- */
+0 */
 
 
 list_t *add_node_end(list_t **head, const char *str)
