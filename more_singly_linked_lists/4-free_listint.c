@@ -1,8 +1,8 @@
 #include "lists.h"
 
 /**
- *
- *
+ * free_listint - frees
+ * @head: head
  *
  *
  */
