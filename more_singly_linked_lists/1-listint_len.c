@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- *
- *
- *
+ * listint_len - lenght
+ * @h: parameter
+ * Return: as
  *
  */
 
