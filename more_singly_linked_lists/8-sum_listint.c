@@ -1,10 +1,9 @@
 #include "lists.h"
 /**
- * get_nodeint_at_index - eturns the number of elements in a
- * linked listint_t list
+ * sum_listint - returns the sum of elements
+ *
  * @head: head of the list
- * @index: value
- * Return: the number nodes
+ * Return: the sum of the values
  */
 int sum_listint(listint_t *head)
 {
