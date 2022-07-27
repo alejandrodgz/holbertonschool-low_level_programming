@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_nodeint - eturns the number of elements in a linked listint_t list
+ * add_nodeint_end - eturns the number of elements in a linked listint_t list
  * @head: head of the list
  * @n: value
  * Return: the number nodes
