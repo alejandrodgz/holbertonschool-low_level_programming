@@ -8,23 +8,23 @@
 
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *ptr;
+	listint_t *ptr, *aux = head;
 
-	if (head == NULL)
+	if (aux == NULL)
 		return (NULL);
-	if (head->next == head)
-		return (head);
-	ptr = head->next;
-	while (head != NULL || ptr != NULL)
+	if (aux->next == aux)
+		return (aux);
+	ptr = aux->next;
+	while (aux != NULL || ptr != NULL)
 	{
-		if (head->next == NULL || ptr->next == NULL)
+		if (aux->next == NULL || ptr->next == NULL)
 			return (NULL);
-		if (head->next < ptr->next)
+		if (aux->next < ptr->next)
 		{
 			ptr = ptr->next;
 			return (ptr);
 		}
-		head = head->next;
+		aux = aux->next;
 		ptr = ptr->next;
 	}
 	return (NULL);
