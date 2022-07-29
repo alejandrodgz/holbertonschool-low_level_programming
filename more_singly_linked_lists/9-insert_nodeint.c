@@ -7,10 +7,12 @@
  * @n: value
  * Return: the number nodes
  */
+
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	listint_t *ptr, *pan, *pot, *pil;
 	unsigned int i = 1, j = 0;
+
 	if (*head == NULL)
 		return (NULL);
 	pot = malloc(sizeof(listint_t));
@@ -23,7 +25,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	}
 	if (idx > j)
 	{
-		return(NULL);
+		return (NULL);
 	}
 	ptr = (*head)->next;
 	pan = *head;
