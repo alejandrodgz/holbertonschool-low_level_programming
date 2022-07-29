@@ -27,15 +27,24 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	{
 		return (NULL);
 	}
-	ptr = (*head)->next;
-	pan = *head;
-	while (i < idx)
+	if (idx == 0)
 	{
-		ptr = ptr->next;
-		pan = pan->next;
-		i++;
+		pot->next = (*head)->next;
+		*head = pot;
+		return (pot);
 	}
-	pan->next = pot;
-	pot->next = ptr;
-	return (pot);
+	else
+	{
+		ptr = (*head)->next;
+		pan = *head;
+		while (i < idx)
+		{
+			ptr = ptr->next;
+			pan = pan->next;
+			i++;
+		}
+		pan->next = pot;
+		pot->next = ptr;
+		return (pot);
+	}
 }
