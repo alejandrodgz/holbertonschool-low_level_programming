@@ -13,8 +13,8 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	listint_t *ptr, *pan, *pot, *pil;
 	unsigned int i = 1, j = 0;
 
-	if (*head == NULL)
-		return (NULL);
+	if (*head == NULL || idx == 0)
+		return (add_nodeint(head, n));
 	pot = malloc(sizeof(listint_t));
 	pot->n = n;
 	pil = *head;
