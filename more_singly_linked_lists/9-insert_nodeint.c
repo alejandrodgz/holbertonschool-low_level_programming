@@ -17,7 +17,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		pot = malloc(sizeof(listint_t));
 		pot->n = n;
 		pot->next = NULL;
-		return (pot):
+		return (pot);
 	}
 	pot = malloc(sizeof(listint_t));
 	pot->n = n;
