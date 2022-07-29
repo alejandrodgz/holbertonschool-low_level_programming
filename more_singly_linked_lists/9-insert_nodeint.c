@@ -29,9 +29,9 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	}
 	if (idx == 0)
 	{
-		pot->next = (*head)->next;
+		pot->next = (*head);
 		*head = pot;
-		return (*head);
+		return (pot);
 	}
 	else
 	{
