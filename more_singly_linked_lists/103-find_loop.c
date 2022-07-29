@@ -8,24 +8,31 @@
 
 listint_t *find_listint_loop(listint_t *head)
 {
-	listint_t *ptr, *aux = head;
+	listint_t *ptr, *aux;
+	int i = 0,j = 0;
 
-	if (aux == NULL)
+	if (head == NULL)
 		return (NULL);
-	if (aux->next == aux)
-		return (aux);
-	ptr = aux->next;
-	while (aux != NULL || ptr != NULL)
+	if (head->next == head)
+		return (head);
+	ptr = head->next;
+	aux = head;
+	while (ptr != NULL)
 	{
-		if (aux->next == NULL || ptr->next == NULL)
-			return (NULL);
-		if (aux->next < ptr->next)
+		while (aux != ptr)
 		{
-			ptr = ptr->next;
-			return (ptr);
+			i++;
+			aux = aux->next;
 		}
-		aux = aux->next;
+		aux = head;
 		ptr = ptr->next;
+		while (aux != ptr)
+		{
+			j++;
+			aux = aux->next;
+		}
+		if (i > j)
+			return (aux);
 	}
 	return (NULL);
 }

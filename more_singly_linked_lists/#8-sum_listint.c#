@@ -4,12 +4,13 @@
  * @head: head of the list
  * Return: the value of eliminated node
  */
-int pop_listint(listint_t **head)
+int sum_listint(listint_t *head)
 {
-	listint_t *ptr;
+	listint_t *ptr, *opt;
 	int a;
 
 	ptr = *head;
+	opt = head->next;
 	if (ptr == NULL)
 		return (0);
 	a = (*head)->n;

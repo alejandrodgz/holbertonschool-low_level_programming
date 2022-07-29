@@ -1,37 +1,40 @@
 #include "lists.h"
 /**
- * get_nodeint_at_index - eturns the number of elements in a
+ * *insert_nodeint_at_index - eturns the number of elements in a
  * linked listint_t list
  * @head: head of the list
- * @index: value
+ * @index: node number
+ * @n: value
  * Return: the number nodes
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *ptr, *pot;
+	listint_t *ptr, *pan, *pot, *pil;
 	unsigned int i = 1, j = 0;
-**
-	if (head == NULL)
-		return (NULL);
-	ptr = head;
-	if (ptr == NULL)
+
+	if (*head == NULL)
 		return (NULL);
 	pot = malloc(sizeof(listint_t));
-	while (head != NULL)
+	pot->n = n;
+	pil = *head;
+	while (pil != NULL)
 	{
 		j++;
-		head = head->next;
+		pil = pil->next;
 	}
-	if (index > j)
+	if (idx > j)
 	{
-		return (NULL);
+		return(NULL);
 	}
-	while (i < index)
+	ptr = (*head)->next;
+	pan = *head;
+	while (i < idx)
 	{
 		ptr = ptr->next;
+		pan = pan->next;
 		i++;
 	}
-	ptr->next = pot;
-	pot->n = n;
-	return (ptr);
+	pan->next = pot;
+	pot->next = ptr;
+	return (pot);
 }
