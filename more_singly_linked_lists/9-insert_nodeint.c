@@ -1,10 +1,8 @@
 #include "lists.h"
 /**
- * *insert_nodeint_at_index - eturns the number of elements in a
  * insert_nodeint_at_index - eturns the number of elements in a
  * linked listint_t list
  * @head: head of the list
- * @index: node number
  * @idx: node number
  * @n: value
  * Return: the number nodes
@@ -26,7 +24,6 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	if (idx > j)
 	{
 		return(NULL);
-		return (NULL);
 	}
 	ptr = (*head)->next;
 	pan = *head;
