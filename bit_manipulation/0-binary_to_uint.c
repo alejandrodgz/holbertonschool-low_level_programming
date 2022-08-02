@@ -9,8 +9,8 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	int i = 0, e = 0, d, base = 1;
-	long int y = 0;
+	unsigned int m = 0;
+	int i = 0, n = 0;
 
 	if (b == NULL)
 		return(0);
@@ -22,15 +22,18 @@ unsigned int binary_to_uint(const char *b)
 		}
 		i++;
 	}
-	y = atoi(b);
-	while (y > 0)
+	i = i - 1;
+	while (i >= 0)
 	{
-		d = y % 10;
-		e = e + d * base;
-		y = y / 10;
-		base = base * 2;
+		if ( b[i] == '1')
+		{
+			m = m + (1<<n);
+		}
+		n++;
+		i--;
+
 	}
-	return (e);
+	return (m);
 }
 		
 		
