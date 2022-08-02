@@ -2,7 +2,7 @@
 
 /**
  * binary_to_uint - binary to decimal
- * @b: string of binary number 
+ * @b: string of binary number
  * Return: decimal number
  *
  */
@@ -13,7 +13,7 @@ unsigned int binary_to_uint(const char *b)
 	int i = 0, n = 0;
 
 	if (b == NULL)
-		return(0);
+		return (0);
 	while (b[i] != '\0')
 	{
 		if ((b[i] > 61))
@@ -25,9 +25,9 @@ unsigned int binary_to_uint(const char *b)
 	i = i - 1;
 	while (i >= 0)
 	{
-		if ( b[i] == '1')
+		if (b[i] == '1')
 		{
-			m = m + (1<<n);
+			m = m + (1 << n);
 		}
 		n++;
 		i--;
@@ -35,7 +35,3 @@ unsigned int binary_to_uint(const char *b)
 	}
 	return (m);
 }
-		
-		
-
-
