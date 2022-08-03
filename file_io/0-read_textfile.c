@@ -26,10 +26,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
       {
         return (0);
       }
-    else
-      {
-        printf("%s", s);
-      }
+    dprintf(2, "%s", s);
     close(fd);
     free(s);
     return (rd);
