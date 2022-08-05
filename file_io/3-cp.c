@@ -33,7 +33,7 @@ int cp(const char *filefrom, char *fileto)
 	char s[2000];
 
 	fe = open(filefrom, O_RDWR, 0664);
-	if (fe = -1)
+	if (fe == -1)
 	{
 		dprintf(2,"Error: Can\'t read from file %s\n", filefrom);
 		exit (98);
