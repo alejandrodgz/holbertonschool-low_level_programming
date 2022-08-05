@@ -3,7 +3,7 @@
 /**
 * get_dnodeint_at_index - print
 * @head: head of list
-* @n: data
+* @index: data
 * Return: number of nodes
 */
 
