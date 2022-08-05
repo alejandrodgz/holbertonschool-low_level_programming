@@ -8,16 +8,7 @@
 
 void print_binary(unsigned long int n)
 {
-	 unsigned long int n2 = n;
-	 int a = 0;
-
-	 while (a > 0)
-	 { 
-		  a++;
-		  a = a >> 1;
-	 }
-	 a--;
-	 if (a > 0);
-
-
-
+	 if(n > 1)
+		print_binary(n >> 1);
+	 putchar((n & 1) + '0');
+}
