@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 
 /**
  * free_dlistint - frees list
@@ -16,4 +16,5 @@ void free_dlistint(dlistint_t *head)
 		head = head->next;
 		free(tmp);
 	}
+	free(head);
 }
