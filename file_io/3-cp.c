@@ -35,26 +35,26 @@ int cp(const char *filefrom, char *fileto)
 	fe = open(filefrom, O_RDONLY);
 	if (fe == -1)
 	{
-		dprintf(STDERR_FILENO,"Error: Can\'t read from file %s\n", filefrom);
+		dprintf(STDERR_FILENO,"Error: Can\'t read from %s\n", filefrom);
 		exit (98);
 	}
 	fd = open(fileto, O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (fd == -1)
 	{
-		dprintf(STDERR_FILENO,"Error: Can\'t read from file %s\n", fileto);
+		dprintf(STDERR_FILENO,"Error: Can\'t read from %s\n", fileto);
 		exit (99);
 	}
 	while((rd = read(fe, s, 1024)) != 0)
 	{
 		if (rd == -1)
 		{
-			dprintf(STDERR_FILENO,"Error: Can\'t read from file %s\n", filefrom);
+			dprintf(STDERR_FILENO,"Error: Can\'t read from %s\n", filefrom);
 			exit (98);
 		}
 		wd = write(fd, s, rd);
 		if (wd == -1)
 		{
-			dprintf(STDERR_FILENO,"Error: Can\'t read from file %s\n", fileto);
+			dprintf(STDERR_FILENO,"Error: Can\'t read from %s\n", fileto);
 			exit (99);
 		}
 	}
