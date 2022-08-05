@@ -41,7 +41,7 @@ int cp(const char *filefrom, char *fileto)
 	fd = open(fileto, O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (fd == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can\'t read from file %s\n", fileto);
+		dprintf(STDERR_FILENO, "Error: Can\'t write to %s\n", fileto);
 		exit(99);
 	}
 	while ((rd = read(fe, s, 1024)) != 0)
