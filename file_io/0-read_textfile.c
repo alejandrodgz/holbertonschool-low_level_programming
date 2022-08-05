@@ -19,13 +19,13 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (fd == -1)
 	{
 		return (0);
-    }
+	}
 	s = malloc(sizeof(char) * letters + 1);
 	rd = read(fd, s, letters);
 	if (rd == -1)
-    {
+	{
 		return (0);
-    }
+	}
 	dprintf(STDOUT_FILENO, "%s", s);
 	close(fd);
 	free(s);
