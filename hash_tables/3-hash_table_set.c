@@ -36,12 +36,15 @@ hash_node_t *ht_pair(const char *key, const char *value)
     {
         if (strcmp(entry->key, key) == 0)
         {
-            prev = entry;
-            prev = ht_pair(key, value);
-            prev->next = entry;
+            free(entry->value);
+            entry->value = malloc(strlen(value) + 1);
+            strcpy(entry->value, value);
             return (1);
         }
         entry = entry->next;
     }
+    prev = ht_pair(key, value);
+    prev->next = ht->array[slot];
+    ht->array[slot] = prev;
     return (1);
  }
