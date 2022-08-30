@@ -41,10 +41,7 @@ hash_node_t *ht_pair(const char *key, const char *value)
             prev->next = entry;
             return (1);
         }
-        prev = entry;
         entry = prev->next;
     }
-
-    prev->next = ht_pair(key, value);
     return (1);
  }
