@@ -36,6 +36,8 @@ hash_node_t *ht_pair(const char *key, const char *value)
     {
         if (strcmp(entry->key, key) == 0)
         {
+            prev = ht_pair(entry->key, entry->value);
+            prev->next = entry;
             free(entry->value);
             entry->value = malloc(strlen(value) + 1);
             strcpy(entry->value, value);
