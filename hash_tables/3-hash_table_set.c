@@ -59,7 +59,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		{
 			new_value = strdup(value);
 			if (new_value == NULL)
-                		return (0);
+				return (0);
 			free(current->value);
 			current->value = new_value;
 			return (1);
@@ -67,7 +67,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	current = current->next;
 	}
 	hash_node = create_the_node(key, value);
-        if (hash_node == NULL)
+	if (hash_node == NULL)
 	{
 		return (0);
 	}
