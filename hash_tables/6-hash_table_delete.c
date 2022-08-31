@@ -1,7 +1,7 @@
 #include "hash_tables.h"
 
 /**
- * hash_table_print - free
+ * hash_table_delete - free
  * @ht: list
  *
  */
