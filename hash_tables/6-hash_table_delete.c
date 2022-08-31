@@ -13,7 +13,7 @@ void hash_table_delete(hash_table_t *ht)
 
 	if (ht == NULL || ht->array == NULL)
 		return;
-	for (i = 0; i <= ht->size; i++)
+	for (i = 0; i < ht->size; i++)
 	{
 		node1 = ht->array[i];
 		while (node1)
@@ -26,7 +26,6 @@ void hash_table_delete(hash_table_t *ht)
 			free(node2->key);
 			free(node2);
 		}
-		free(ht->array[i]);
 	}
 	free(ht->array);
 	free(ht);
