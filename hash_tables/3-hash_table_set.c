@@ -33,7 +33,7 @@ hash_node_t *create_the_node(const char *key, const char *value)
 }
 
 /**
- * hash_table_t - create entry
+ * hash_table_set - create entry
  * @ht: table
  * @key: key of the node
  * @value: value node
