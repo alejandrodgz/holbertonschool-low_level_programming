@@ -2,7 +2,7 @@
 
 /**
  * linear_search - find element in an array
- * @array: array to search 
+ * @array: array to search
  * @size: size of array
  * @value: element to search
  * Return: index
