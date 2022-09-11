@@ -13,7 +13,7 @@ int binary2(int *array, int first, int last, int value)
 {
 	int mid = (first + last) / 2;
 	int i;
-	char *sep = "";
+	char *sep = " ";
 
 	if(array[mid] == 0)
 		return (-1);
