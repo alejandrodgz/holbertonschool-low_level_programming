@@ -6,7 +6,7 @@
  * @first: first digit
  * @last: last digit
  * @value: value to seach
- * Return: index of value 
+ * Return: index of value
  */
 
 int binary2(int *array, int first, int last, int value)
@@ -15,7 +15,7 @@ int binary2(int *array, int first, int last, int value)
 	int i;
 	char *sep = " ";
 
-	if(array[mid] == 0)
+	if (array[mid] == 0)
 		return (-1);
 	if (value < first)
 		return (-1);
@@ -35,7 +35,7 @@ int binary2(int *array, int first, int last, int value)
 		if (array[mid] < value && last != first)
 			return (binary2(array, (mid + 1), last, value));
 		else
-			return(-1);
+			return (-1);
 	}
 	return (-1);
 }
@@ -51,12 +51,9 @@ int binary_search(int *array, size_t size, int value)
 {
 	int l, a;
 
-	
 	l = size - 1;
 	if (array == NULL)
 		return (-1);
-	/*if (value > l)
-		return(-1);*/
 	a = binary2(array, 0, l, value);
 	return (a);
 }
